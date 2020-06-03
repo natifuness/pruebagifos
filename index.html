@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!--Stylesheets-->
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/darktheme.css" />
+
+        <!--Google Fonts and icon-->
+        <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+
+        <title> PROYECTO GIFT IOS2</title>
+    </head>
+
+    <body class="">
+        <header class="header">
+            <p class="barra">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+        </header>
+
+        <!--LOGO Y NAV BAR-->
+    <section id="principal">
+
+        <div class="logo" id="logo">
+            <img id="logo_claro" src="./assets/gifOF_logo.png" alt="logo_claro">
+            <img id="logo_dark" src="./assets/gifOF_logo_dark.png" alt="logo_dark">
+        </div>
+
+        <!--NAV BAR-->
+        <nav class="navbar">
+                    
+            <button class="btn_global" id="btn_create_gif">Crear Guifos</button>
+            <!-- TEMAS -->
+            <div class="btn_select_theme">
+                <button class="btn_global" id="btn-text">
+                    Elegir Tema
+                </button>
+                <!-- BOTON dropdown -->
+                <button class="btn_global" id="botontemas">
+                    <span id="content-dropdown">
+                        <span id="dropdown-icon"></span> 
+                    </span>
+                </button>    
+                <!-- dropdown MENU -->    
+                <ul class="select-theme" id="dropdown">
+                    <li id="theme1"><a id="t1" href="#">Sailor Day</a></li>
+                    <li id="theme2"><a id="t2" href="#">Sailor Night</a></li>
+                </ul>
+            </div>
+            
+            <p id="enlace_mis_guifs"><a href="#" id="mis_gifos">Mis Gifos</a></p>
+    </section>
+
+    <section id="buscador">
+        <div class="box">
+            <p class="titulobusqueda">Buscar</p>
+            <input type="search" id="search" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+            <button id="btn_go" type="submit" onClick="busqueda()"><img class="lupa" src="assets/lupa_inactive.svg" alt="S" />Buscar</button>
+        </div>
+    </section>
+    <section id="sugerencia">
+        <div class="boxsug">
+            <input type="text" class="sugerencias" placeholder="Hoy te sugerimos:">
+        </div>
+        <div class="contenedor1">
+            <div class="imgsugerencias">
+                <p class="titulosug"></p>
+                <img id="imgsug">
+            </div>
+            <div class="imgsugerencias">
+                <p class="titulosug"></p>
+                <img id="imgsug2">
+            </div>
+            <div class="imgsugerencias">
+                <p class="titulosug"></p>
+                <img id="imgsug">
+            </div>
+            <div class="imgsugerencias">
+                <p class="titulosug"></p>
+                <img id="imgsug">
+            </div>
+        </div>
+
+    </section>
+    
+    <section id="tendencia">
+        <div class="boxtend">
+            <input type="text" class="tendencias" placeholder="Tendencias:">
+        </div>
+        <div id="searchForm"></div>
+    </section>
+
+    <script type="text/javascript" src="javascript/gifs.js"></script>
+    <script type="text/javascript" src="javascript/thems.js"></script>
+    </body>
+</html>
